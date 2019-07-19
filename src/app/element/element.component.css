@@ -1,0 +1,77 @@
+.header{
+    margin-top: 40px;
+    border-radius:10px;
+    background-color: #ffffff;
+    margin: 100px;
+}
+
+.main{
+    color: #EC7063 ;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 70px;
+}
+
+.card-container{
+    position: relative;
+    /* width: 18rem; */
+    perspective: 200rem;
+    height: 412px;
+    margin: 40px;
+    float: left;
+    padding-left: 170px;
+}
+
+.card-container:hover .card-front{
+    transform: rotateY(180deg);
+}
+
+.card-container:hover .card-back{
+    transform: rotateY(0deg);
+}
+
+.card-front{
+    background-color: #5499C7;
+}
+
+.card-back{
+    transform: rotateY(180deg);
+    background-color: #45B39D  ;
+}
+
+.card{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: all 0.9s;
+    backface-visibility: hidden;
+    padding: 10px;
+}
+
+.card-back .card-body{
+    position: relative;
+}
+
+.card-title{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    color: #495057;
+
+}
+
+.card-tex{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color:#ffff;
+}
+
+.card-text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color:#ffff;
+}
+
+.social-link{
+    font-size: 40px;
+    color:#495057;
+}
